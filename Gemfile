@@ -158,7 +158,7 @@ group :development, :dirtylaundrydev, :profile do
 
   gem 'byebug'
   gem 'quiet_assets'
-  gem "better_errors"
+  gem "better_errors", ">= 2.8.0"
   gem 'pry'
 
 end
