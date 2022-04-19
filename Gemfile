@@ -37,7 +37,7 @@ gem 'sqlite3'
 gem 'pg'
 
 #git functionality
-gem 'git'
+gem 'git', '>= 1.11.0'
 
 #Workflow
 gem 'workflowable'
