@@ -1,9 +1,9 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.2.10'
+gem 'rails', '5.2.7.1'
 
 gem 'zip'
-gem 'lograge'
+gem 'lograge', '>= 0.9.0'
 # Allow using posix-spawn for popen to save memory with multiple threads.
 gem 'posix-spawn'
 
@@ -89,11 +89,11 @@ gem 'slim'
 gem 'jquery-turbolinks'
 
 #Allowing exporting/importing data into database
-gem 'yaml_db'
+gem 'yaml_db', '>= 0.7.0'
 
 #Authentication
-gem 'devise'
-gem 'responders'
+gem 'devise', '>= 4.4.2'
+gem 'responders', '>= 2.4.0'
 
 #Comments
 gem 'acts_as_commentable_with_threading'
@@ -110,7 +110,7 @@ gem "hashdiff"
 #gem 'active_scaffold'
 gem "therubyracer"
 gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
-gem 'simple_form'
+gem 'simple_form', '>= 4.0.0'
 
 gem 'ip'
 
@@ -121,7 +121,7 @@ gem 'net-http-persistent'
 
 gem 'minitest'
 
-gem 'minitest-rails'
+gem 'minitest-rails', '>= 3.0.0'
 
 group :development, :test, :production do
   gem 'unicorn'
@@ -140,7 +140,7 @@ gem "redis-rails"
 group :development, :dirtylaundrydev do
   gem 'spring', group: :development
   gem "ruby-prof"
-  gem 'meta_request'
+  gem 'meta_request', '>= 0.5.0'
   gem "binding_of_caller"
   gem "bullet"
   gem 'rack-mini-profiler', require: false
@@ -148,7 +148,7 @@ group :development, :dirtylaundrydev do
   gem 'rbtrace'
   #gem 'rails-footnotes'
   #gem 'rails-footnotes', github: 'josevalim/rails-footnotes', branch: 'release-4.0'
-  gem 'rails-footnotes', '>= 4.0.0', '<5'
+  gem 'rails-footnotes', '>= 4.0.2', '< 5'
   gem 'railroady'
   gem 'ruby_gntp'
   # gem 'rack-perftools_profiler', :require => 'rack/perftools_profiler'
@@ -181,15 +181,15 @@ group :test do
 end
 
 gem 'foundation-rails', '5.3.3.0'
-gem 'sass-rails',   '5.0.7'
+gem 'sass-rails', '5.0.7'
 gem 'sass', '3.2.19'
-gem 'coffee-rails', '4.0.1'
+gem 'coffee-rails', '4.2.2'
 gem 'sprockets', '2.11.3'
 
 
 gem 'uglifier'
 
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.0.1'
 
 gem 'rb-readline'
 
