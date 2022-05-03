@@ -79,7 +79,7 @@ gem 'mlanett-redis-lock', require: 'redis-lock'
 gem 'kaminari'
 
 #Sidekiq UI
-gem 'sinatra', require: false
+gem 'sinatra', '>= 2.2.0', require: false
 
 #Templating language, not sure if used
 gem 'slim'
