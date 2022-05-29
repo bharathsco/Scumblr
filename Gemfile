@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.2.10'
+gem 'rails', '5.0.0'
 
 gem 'zip'
 gem 'lograge'
@@ -79,7 +79,7 @@ gem 'mlanett-redis-lock', require: 'redis-lock'
 gem 'kaminari'
 
 #Sidekiq UI
-gem 'sinatra', require: false
+gem 'sinatra', '>= 2.0.0', require: false
 
 #Templating language, not sure if used
 gem 'slim'
@@ -121,7 +121,7 @@ gem 'net-http-persistent'
 
 gem 'minitest'
 
-gem 'minitest-rails'
+gem 'minitest-rails', '>= 3.0.0'
 
 group :development, :test, :production do
   gem 'unicorn'
@@ -140,7 +140,7 @@ gem "redis-rails"
 group :development, :dirtylaundrydev do
   gem 'spring', group: :development
   gem "ruby-prof"
-  gem 'meta_request'
+  gem 'meta_request', '>= 0.4.0'
   gem "binding_of_caller"
   gem "bullet"
   gem 'rack-mini-profiler', require: false
@@ -148,7 +148,7 @@ group :development, :dirtylaundrydev do
   gem 'rbtrace'
   #gem 'rails-footnotes'
   #gem 'rails-footnotes', github: 'josevalim/rails-footnotes', branch: 'release-4.0'
-  gem 'rails-footnotes', '>= 4.0.0', '<5'
+  gem 'rails-footnotes', '>= 4.0.2', '< 5'
   gem 'railroady'
   gem 'ruby_gntp'
   # gem 'rack-perftools_profiler', :require => 'rack/perftools_profiler'
@@ -181,15 +181,15 @@ group :test do
 end
 
 gem 'foundation-rails', '5.3.3.0'
-gem 'sass-rails',   '5.0.7'
+gem 'sass-rails', '5.0.7'
 gem 'sass', '3.2.19'
-gem 'coffee-rails', '4.0.1'
-gem 'sprockets', '2.11.3'
+gem 'coffee-rails', '4.1.1'
+gem 'sprockets', '3.3.5'
 
 
 gem 'uglifier'
 
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.0.1'
 
 gem 'rb-readline'
 
