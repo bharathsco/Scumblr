@@ -8,7 +8,7 @@ gem 'lograge'
 gem 'posix-spawn'
 
 #For Tasks/Search Providers
-gem 'google-api-client', '~>0.8.0'
+gem 'google-api-client', '~> 0.8.6'
 gem "github_api", require: false
 gem 'colorize', require: false
 gem 'twitter'
@@ -52,7 +52,7 @@ gem 'cancan'
 gem 'ransack'
 
 #Image processing/attachments
-gem 'paperclip', ">= 5.0"
+gem 'paperclip', '>= 5.2.1'
 gem 'aws-sdk'
 gem 'aws-sdk-ses'
 
@@ -148,7 +148,7 @@ group :development, :dirtylaundrydev do
   gem 'rbtrace'
   #gem 'rails-footnotes'
   #gem 'rails-footnotes', github: 'josevalim/rails-footnotes', branch: 'release-4.0'
-  gem 'rails-footnotes', '>= 4.0.0', '<5'
+  gem 'rails-footnotes', '>= 4.0.2', '< 5'
   gem 'railroady'
   gem 'ruby_gntp'
   # gem 'rack-perftools_profiler', :require => 'rack/perftools_profiler'
@@ -172,11 +172,11 @@ end
 
 group :test do
   gem 'database_cleaner'
-  gem 'shoulda', '~> 3.5'
+  gem 'shoulda', '~> 3.5', '>= 3.5.0'
   gem 'activerecord-nulldb-adapter'
   gem 'minitest-reporters'
-  gem 'shoulda-matchers', '~> 2.0'
-  gem 'shoulda-callback-matchers', '~> 1.1.1'
+  gem 'shoulda-matchers', '~> 2.6', '>= 2.6.2'
+  gem 'shoulda-callback-matchers', '~> 1.1.4'
   gem 'simplecov', :require => false, :group => :test
 end
 
