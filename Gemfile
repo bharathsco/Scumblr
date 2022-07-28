@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.2.10'
+gem 'rails', '5.2.8.1'
 
 gem 'zip'
 gem 'lograge'
@@ -89,7 +89,7 @@ gem 'slim'
 gem 'jquery-turbolinks'
 
 #Allowing exporting/importing data into database
-gem 'yaml_db'
+gem 'yaml_db', '>= 0.7.0'
 
 #Authentication
 gem 'devise'
@@ -148,7 +148,7 @@ group :development, :dirtylaundrydev do
   gem 'rbtrace'
   #gem 'rails-footnotes'
   #gem 'rails-footnotes', github: 'josevalim/rails-footnotes', branch: 'release-4.0'
-  gem 'rails-footnotes', '>= 4.0.0', '<5'
+  gem 'rails-footnotes', '>= 4.0.2', '< 5'
   gem 'railroady'
   gem 'ruby_gntp'
   # gem 'rack-perftools_profiler', :require => 'rack/perftools_profiler'
