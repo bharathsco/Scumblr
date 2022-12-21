@@ -148,7 +148,7 @@ group :development, :dirtylaundrydev do
   gem 'rbtrace'
   #gem 'rails-footnotes'
   #gem 'rails-footnotes', github: 'josevalim/rails-footnotes', branch: 'release-4.0'
-  gem 'rails-footnotes', '>= 4.0.0', '<5'
+  gem 'rails-footnotes', '>= 4.0.2', '< 5'
   gem 'railroady'
   gem 'ruby_gntp'
   # gem 'rack-perftools_profiler', :require => 'rack/perftools_profiler'
@@ -181,10 +181,10 @@ group :test do
 end
 
 gem 'foundation-rails', '5.3.3.0'
-gem 'sass-rails',   '5.0.7'
+gem 'sass-rails', '6.0.0'
 gem 'sass', '3.2.19'
 gem 'coffee-rails', '4.0.1'
-gem 'sprockets', '2.11.3'
+gem 'sprockets', '4.2.0'
 
 
 gem 'uglifier'
