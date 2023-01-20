@@ -1,14 +1,14 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.2.10'
+gem 'rails', '6.1.7.1'
 
 gem 'zip'
-gem 'lograge'
+gem 'lograge', '>= 0.9.0'
 # Allow using posix-spawn for popen to save memory with multiple threads.
 gem 'posix-spawn'
 
 #For Tasks/Search Providers
-gem 'google-api-client', '~>0.8.0'
+gem 'google-api-client', '~> 0.8.6'
 gem "github_api", require: false
 gem 'colorize', require: false
 gem 'twitter'
@@ -52,7 +52,7 @@ gem 'cancan'
 gem 'ransack'
 
 #Image processing/attachments
-gem 'paperclip', ">= 5.0"
+gem 'paperclip', '>= 5.2.1'
 gem 'aws-sdk'
 gem 'aws-sdk-ses'
 
@@ -79,7 +79,7 @@ gem 'mlanett-redis-lock', require: 'redis-lock'
 gem 'kaminari'
 
 #Sidekiq UI
-gem 'sinatra', require: false
+gem 'sinatra', '>= 2.0.0', require: false
 
 #Templating language, not sure if used
 gem 'slim'
@@ -89,17 +89,17 @@ gem 'slim'
 gem 'jquery-turbolinks'
 
 #Allowing exporting/importing data into database
-gem 'yaml_db'
+gem 'yaml_db', '>= 0.7.0'
 
 #Authentication
-gem 'devise'
-gem 'responders'
+gem 'devise', '>= 4.7.0'
+gem 'responders', '>= 3.0.0'
 
 #Comments
 gem 'acts_as_commentable_with_threading'
 
 #JSON API Calls
-gem "active_model_serializers"
+gem "active_model_serializers", ">= 0.10.12"
 
 # Cron job generation
 gem "whenever"
@@ -110,7 +110,7 @@ gem "hashdiff"
 #gem 'active_scaffold'
 gem "therubyracer"
 gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
-gem 'simple_form'
+gem 'simple_form', '>= 4.0.0'
 
 gem 'ip'
 
@@ -121,7 +121,7 @@ gem 'net-http-persistent'
 
 gem 'minitest'
 
-gem 'minitest-rails'
+gem 'minitest-rails', '>= 6.1.0'
 
 group :development, :test, :production do
   gem 'unicorn'
@@ -140,7 +140,7 @@ gem "redis-rails"
 group :development, :dirtylaundrydev do
   gem 'spring', group: :development
   gem "ruby-prof"
-  gem 'meta_request'
+  gem 'meta_request', '>= 0.7.0'
   gem "binding_of_caller"
   gem "bullet"
   gem 'rack-mini-profiler', require: false
@@ -148,7 +148,7 @@ group :development, :dirtylaundrydev do
   gem 'rbtrace'
   #gem 'rails-footnotes'
   #gem 'rails-footnotes', github: 'josevalim/rails-footnotes', branch: 'release-4.0'
-  gem 'rails-footnotes', '>= 4.0.0', '<5'
+  gem 'rails-footnotes', '>= 4.0.2', '< 5'
   gem 'railroady'
   gem 'ruby_gntp'
   # gem 'rack-perftools_profiler', :require => 'rack/perftools_profiler'
@@ -172,24 +172,24 @@ end
 
 group :test do
   gem 'database_cleaner'
-  gem 'shoulda', '~> 3.5'
+  gem 'shoulda', '~> 3.5', '>= 3.5.0'
   gem 'activerecord-nulldb-adapter'
   gem 'minitest-reporters'
-  gem 'shoulda-matchers', '~> 2.0'
-  gem 'shoulda-callback-matchers', '~> 1.1.1'
+  gem 'shoulda-matchers', '~> 2.6', '>= 2.6.2'
+  gem 'shoulda-callback-matchers', '~> 1.1.4'
   gem 'simplecov', :require => false, :group => :test
 end
 
 gem 'foundation-rails', '5.3.3.0'
-gem 'sass-rails',   '5.0.7'
+gem 'sass-rails', '5.0.8'
 gem 'sass', '3.2.19'
-gem 'coffee-rails', '4.0.1'
-gem 'sprockets', '2.11.3'
+gem 'coffee-rails', '4.2.2'
+gem 'sprockets', '3.3.5'
 
 
 gem 'uglifier'
 
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.0.1'
 
 gem 'rb-readline'
 
