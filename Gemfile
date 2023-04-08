@@ -69,7 +69,7 @@ gem 'oj'
 gem 'activerecord-import'
 
 #Used for task queueing
-gem 'sidekiq'
+gem 'sidekiq', '>= 7.0.8'
 gem 'sidekiq-status'
 gem 'sidekiq-scheduler'
 gem 'sidekiq-limit_fetch'
