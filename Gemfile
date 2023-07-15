@@ -49,7 +49,7 @@ gem 'jira-ruby'
 gem 'cancan'
 
 #Searching
-gem 'ransack'
+gem 'ransack', '>= 4.0.0'
 
 #Image processing/attachments
 gem 'paperclip', ">= 5.0"
