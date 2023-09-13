@@ -69,10 +69,10 @@ gem 'oj'
 gem 'activerecord-import'
 
 #Used for task queueing
-gem 'sidekiq'
-gem 'sidekiq-status'
-gem 'sidekiq-scheduler'
-gem 'sidekiq-limit_fetch'
+gem 'sidekiq', '>= 7.1.3'
+gem 'sidekiq-status', '>= 0.7.0'
+gem 'sidekiq-scheduler', '>= 2.1.8'
+gem 'sidekiq-limit_fetch', '>= 4.0.0'
 gem 'mlanett-redis-lock', require: 'redis-lock'
 
 #Pagination
