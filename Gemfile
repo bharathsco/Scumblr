@@ -121,7 +121,7 @@ gem 'net-http-persistent'
 
 gem 'minitest'
 
-gem 'minitest-rails'
+gem 'minitest-rails', '>= 7.1.0'
 
 group :development, :test, :production do
   gem 'unicorn'
