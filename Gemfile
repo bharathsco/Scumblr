@@ -1,18 +1,18 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.2.10'
+gem 'rails', '7.0.8.1'
 
 gem 'zip'
-gem 'lograge'
+gem 'lograge', '>= 0.9.0'
 # Allow using posix-spawn for popen to save memory with multiple threads.
 gem 'posix-spawn'
 
 #For Tasks/Search Providers
 gem 'google-api-client', '~>0.8.0'
-gem "github_api", require: false
+gem "github_api", ">= 0.15.0", require: false
 gem 'colorize', require: false
 gem 'twitter'
-gem 'market_bot'
+gem 'market_bot', '>= 1.0.0'
 gem 'koala'
 gem "brakeman", require: false
 gem "bundler-audit"
@@ -29,7 +29,7 @@ gem 'filesize'
 
 # scott things
 gem 'json-schema-generator'
-gem 'zeroclipboard-rails'
+gem 'zeroclipboard-rails', '>= 0.1.2'
 
 gem 'activerecord-session_store', git: 'https://github.com/rails/activerecord-session_store'
 #Database gems
@@ -49,7 +49,7 @@ gem 'jira-ruby'
 gem 'cancan'
 
 #Searching
-gem 'ransack'
+gem 'ransack', '>= 1.8.0'
 
 #Image processing/attachments
 gem 'paperclip', ">= 5.0"
@@ -69,37 +69,37 @@ gem 'oj'
 gem 'activerecord-import'
 
 #Used for task queueing
-gem 'sidekiq'
-gem 'sidekiq-status'
-gem 'sidekiq-scheduler'
-gem 'sidekiq-limit_fetch'
+gem 'sidekiq', '>= 5.0.0'
+gem 'sidekiq-status', '>= 0.7.0'
+gem 'sidekiq-scheduler', '>= 2.1.8'
+gem 'sidekiq-limit_fetch', '>= 4.0.0'
 gem 'mlanett-redis-lock', require: 'redis-lock'
 
 #Pagination
-gem 'kaminari'
+gem 'kaminari', '>= 0.16.2'
 
 #Sidekiq UI
-gem 'sinatra', require: false
+gem 'sinatra', '>= 2.0.0', require: false
 
 #Templating language, not sure if used
 gem 'slim'
 
 #Performance gem that changes how links are handed
 ##gem 'turbolinks'
-gem 'jquery-turbolinks'
+gem 'jquery-turbolinks', '>= 2.1.0'
 
 #Allowing exporting/importing data into database
-gem 'yaml_db'
+gem 'yaml_db', '>= 0.7.0'
 
 #Authentication
-gem 'devise'
-gem 'responders'
+gem 'devise', '>= 4.7.0'
+gem 'responders', '>= 3.0.0'
 
 #Comments
 gem 'acts_as_commentable_with_threading'
 
 #JSON API Calls
-gem "active_model_serializers"
+gem "active_model_serializers", ">= 0.10.13"
 
 # Cron job generation
 gem "whenever"
@@ -109,8 +109,8 @@ gem "hashdiff"
 
 #gem 'active_scaffold'
 gem "therubyracer"
-gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
-gem 'simple_form'
+gem "less-rails" , ">= 2.6.0" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
+gem 'simple_form', '>= 4.0.0'
 
 gem 'ip'
 
@@ -121,11 +121,11 @@ gem 'net-http-persistent'
 
 gem 'minitest'
 
-gem 'minitest-rails'
+gem 'minitest-rails', '>= 7.0.0'
 
 group :development, :test, :production do
-  gem 'unicorn'
-  gem 'unicorn-rails'
+  gem 'unicorn', '>= 4.9.0'
+  gem 'unicorn-rails', '>= 2.2.0'
 end
 
 group :test do
@@ -140,15 +140,15 @@ gem "redis-rails"
 group :development, :dirtylaundrydev do
   gem 'spring', group: :development
   gem "ruby-prof"
-  gem 'meta_request'
+  gem 'meta_request', '>= 0.7.4'
   gem "binding_of_caller"
   gem "bullet"
-  gem 'rack-mini-profiler', require: false
+  gem 'rack-mini-profiler', '>= 1.0.0', require: false
   gem 'flamegraph'
   gem 'rbtrace'
   #gem 'rails-footnotes'
   #gem 'rails-footnotes', github: 'josevalim/rails-footnotes', branch: 'release-4.0'
-  gem 'rails-footnotes', '>= 4.0.0', '<5'
+  gem 'rails-footnotes', '>= 4.1.0', '< 5'
   gem 'railroady'
   gem 'ruby_gntp'
   # gem 'rack-perftools_profiler', :require => 'rack/perftools_profiler'
@@ -166,7 +166,7 @@ end
 #Testing
 group :development, :test, :dirtylaundrydev do
   #gem 'rspec-rails'
-  gem 'factory_girl_rails'
+  gem 'factory_girl_rails', '>= 4.5.0'
 
 end
 
@@ -180,16 +180,16 @@ group :test do
   gem 'simplecov', :require => false, :group => :test
 end
 
-gem 'foundation-rails', '5.3.3.0'
-gem 'sass-rails',   '5.0.7'
+gem 'foundation-rails', '5.4.0.0'
+gem 'sass-rails', '5.0.8'
 gem 'sass', '3.2.19'
-gem 'coffee-rails', '4.0.1'
-gem 'sprockets', '2.11.3'
+gem 'coffee-rails', '4.2.2'
+gem 'sprockets', '3.3.5'
 
 
 gem 'uglifier'
 
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.0.1'
 
 gem 'rb-readline'
 
