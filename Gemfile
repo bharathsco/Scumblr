@@ -140,7 +140,7 @@ gem "redis-rails"
 group :development, :dirtylaundrydev do
   gem 'spring', group: :development
   gem "ruby-prof"
-  gem 'meta_request'
+  gem 'meta_request', '>= 0.8.0'
   gem "binding_of_caller"
   gem "bullet"
   gem 'rack-mini-profiler', require: false
