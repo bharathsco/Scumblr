@@ -76,7 +76,7 @@ gem 'sidekiq-limit_fetch'
 gem 'mlanett-redis-lock', require: 'redis-lock'
 
 #Pagination
-gem 'kaminari'
+gem 'kaminari', '>= 0.16.2'
 
 #Sidekiq UI
 gem 'sinatra', require: false
@@ -140,7 +140,7 @@ gem "redis-rails"
 group :development, :dirtylaundrydev do
   gem 'spring', group: :development
   gem "ruby-prof"
-  gem 'meta_request'
+  gem 'meta_request', '>= 0.4.3'
   gem "binding_of_caller"
   gem "bullet"
   gem 'rack-mini-profiler', require: false
