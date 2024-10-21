@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.2.10'
+gem 'rails', '7.0.0'
 
 gem 'zip'
 gem 'lograge'
@@ -49,7 +49,7 @@ gem 'jira-ruby'
 gem 'cancan'
 
 #Searching
-gem 'ransack'
+gem 'ransack', '>= 2.3.1'
 
 #Image processing/attachments
 gem 'paperclip', ">= 5.0"
@@ -76,7 +76,7 @@ gem 'sidekiq-limit_fetch'
 gem 'mlanett-redis-lock', require: 'redis-lock'
 
 #Pagination
-gem 'kaminari'
+gem 'kaminari', '>= 1.0.0'
 
 #Sidekiq UI
 gem 'sinatra', require: false
@@ -99,7 +99,7 @@ gem 'responders'
 gem 'acts_as_commentable_with_threading'
 
 #JSON API Calls
-gem "active_model_serializers"
+gem "active_model_serializers", ">= 0.10.3"
 
 # Cron job generation
 gem "whenever"
@@ -148,7 +148,7 @@ group :development, :dirtylaundrydev do
   gem 'rbtrace'
   #gem 'rails-footnotes'
   #gem 'rails-footnotes', github: 'josevalim/rails-footnotes', branch: 'release-4.0'
-  gem 'rails-footnotes', '>= 4.0.0', '<5'
+  gem 'rails-footnotes', '~> 7.0'
   gem 'railroady'
   gem 'ruby_gntp'
   # gem 'rack-perftools_profiler', :require => 'rack/perftools_profiler'
@@ -180,8 +180,8 @@ group :test do
   gem 'simplecov', :require => false, :group => :test
 end
 
-gem 'foundation-rails', '5.3.3.0'
-gem 'sass-rails',   '5.0.7'
+gem 'foundation-rails', '6.5.1.0'
+gem 'sass-rails', '6.0.0'
 gem 'sass', '3.2.19'
 gem 'coffee-rails', '4.0.1'
 gem 'sprockets', '2.11.3'
